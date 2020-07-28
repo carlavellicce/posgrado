@@ -28,3 +28,7 @@ Route::resource('posts', 'Backend\PostController')
 Route::get('/interested', 'InterestedController@index');	
 Route::post('/interested', 'InterestedController@store')->name('interesteds.store');
 Route::get('/interested/create', 'InterestedController@create');
+
+Route::view('/', 'layouts/inicio'); //mostrar la vista de inicio general
+Route::view('/menu', 'layouts/menu');
+

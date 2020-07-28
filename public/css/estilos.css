@@ -1,0 +1,277 @@
+/*--header--*/
+
+.jumbotron{
+  background: #3f2f59;
+  color:#fff;
+  padding: 40px 0 ;
+}
+.navbar{
+    margin-bottom: 0;
+    background: #3f2f60;
+    padding: 0;
+
+
+}
+/*REDES SOCIALES*/
+
+.socialhead{
+    height: 50px;
+    color: white;
+    background-color: #3f2f59;
+}
+
+.socialhead h3 {
+    font-size: 30px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.socialcontent{
+    height: 180px;
+    width: 320px;
+}
+
+.socialcontent img {
+    width: 100%;
+    height: 100%;
+}
+
+.socialfooter{
+    margin-top: -20px;
+    height: 50px;
+    background-color: #3f2f59;
+}
+
+.socialfooter a {
+    color: white;
+    font-size: 18px;
+}
+
+.socialfooter a p{
+    padding-top: 10px;
+}
+
+.socialcontent{
+    margin-top: 10px;
+}
+
+.socialcontent i {
+    margin-top: 10px;
+    height: 60px;
+    width: 60px;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.socialspan{
+    margin-left: 10px;
+    font-size: 21px;
+}
+
+.social-twitter {
+    background-color: #1daee3;
+    border-color: #3997ba;
+    color: white;
+}
+.social-twitter:hover {
+    background-color: #3997ba;
+    border-color: #347b95;
+}
+
+.social-facebook {
+    background-color: #4c699e;
+    border-color: #47618d;
+    color: white;
+}
+.social-facebook:hover {
+    background-color: #47618d;
+    border-color: #3c5173;
+}
+
+.social-linkedin {
+    background-color: #4875B4;
+    border-color: #466b99;
+    color: white;
+}
+.social-linkedin:hover {
+    background-color: #466b99;
+    border-color: #3b5a7c;
+}
+
+.social-instagram {
+    background-color: #d43f3a;
+    border-color: #c03d38;
+    color: white;
+}
+.social-instagram:hover {
+    background-color: #c03d38;
+    border-color: #d43f3a;
+}
+
+/*body*/
+/*carousel*/
+
+.carousel .item{
+    height: 550px;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+.carousel .item>img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.transition-timer-carousel .carousel-caption {
+/*    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 4%, rgba(0,0,0,0.5) 32%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+/*    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(4%,rgba(0,0,0,0.1)), color-stop(32%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+/*    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+/*   background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+/*    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* IE10+ */
+/*    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* W3C */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.transition-timer-carousel .carousel-caption .carousel-caption-header {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+@media (min-width: 970px) {
+    /* Lower the font size of the carousel caption header so that our caption
+    doesn't take up the full image/slide on smaller screens */
+    .transition-timer-carousel .carousel-caption .carousel-caption-header {
+        font-size: 36px;
+    }
+}
+.transition-timer-carousel .carousel-indicators {
+    bottom: 0px;
+    margin-bottom: 5px;
+}
+.transition-timer-carousel .carousel-control {
+    z-index: 11;
+}
+.transition-timer-carousel .transition-timer-carousel-progress-bar {
+    height: 5px;
+    background-color: #5cb85c;
+    width: 0%;
+    margin: -5px 0px 0px 0px;
+    border: none;
+    z-index: 11;
+    position: relative;
+}
+.transition-timer-carousel .transition-timer-carousel-progress-bar.animate{
+    /* We make the transition time shorter to avoid the slide transitioning
+    before the timer bar is "full" - change the 4.25s here to fit your
+    carousel's transition time */
+    -webkit-transition: width 4.25s linear;
+    -moz-transition: width 4.25s linear;
+    -o-transition: width 4.25s linear;
+    transition: width 4.25s linear;
+}
+
+
+
+/*footer*/
+
+footer{
+    margin-top: 20px;
+}
+
+.footerimg{
+    background-color: #322747;
+}
+
+.footerimg img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 50px;
+}
+
+.footercontent{
+    background-color: #3f2f59;
+    color: white;
+}
+
+.contacto i {
+    margin-right: 10px;
+}
+
+.footersocial p a{
+    color: #8d71b7;
+}
+
+.footersocial p a:hover{
+    color: #322747;
+}
+.footer-ul {
+    color: #3cd1ef;
+    padding-left:16px;
+    margin-left:2px;
+}
+.footer-ul li a {
+    color: #3cd1ef;
+}
+
+.footer-ul li a:hover {
+    color: #25768c;
+}
+
+.footercursos p{
+    margin-top: 0px;
+}
+
+.footercursos p a {
+    color: #3cd1ef;
+}
+
+.footercursos p a:hover {
+    color: #25768c;
+}
+
+.footerfoot{
+    background-color: #322747;
+    color: white;
+}
+
+.footerfoot p {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.footerfoot p a {
+    color: #3cd1ef;
+}
+
+.footerfoot p a:hover {
+    color: #25768c;
+}
+
+/*sidebar*/
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 250px;
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #3f2f60;
+    color: #fff;
+    transition: all 0.3s;
+    margin: 5px;
+    float: right;
+}
