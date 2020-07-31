@@ -170,9 +170,7 @@
     position: relative;
 }
 .transition-timer-carousel .transition-timer-carousel-progress-bar.animate{
-    /* We make the transition time shorter to avoid the slide transitioning
-    before the timer bar is "full" - change the 4.25s here to fit your
-    carousel's transition time */
+ 
     -webkit-transition: width 4.25s linear;
     -moz-transition: width 4.25s linear;
     -o-transition: width 4.25s linear;
@@ -274,4 +272,15 @@ footer{
     transition: all 0.3s;
     margin: 5px;
     float: right;
+}
+/*seccion contenido de SIDEBAR */
+.sidebar-header{  /*MENU*/
+    margin-left: 20px;
+    padding: 10px;
+}
+.list-unstyled { 
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 5px;
+
 }

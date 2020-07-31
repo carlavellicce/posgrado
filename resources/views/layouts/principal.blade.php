@@ -8,16 +8,17 @@
           
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <!--enaces de iconos-->
-          
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ asset('css\bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css\estilos.css') }}">
-      <!-- Our Custom CSS -->
-<link rel="stylesheet" href="{{ asset('css\estilos.css') }}">
-<!-- Scrollbar Custom CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-    
+
+        <!--enaces de iconos-->
+              
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ asset('css\bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css\estilos.css') }}">
+          <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="{{ asset('css\estilos.css') }}">
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+        
   </head>
   <body>
 <!-- barra de menu-->
@@ -25,27 +26,27 @@
       <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
             <div class="container">
               <div class="navbar-header">
-                <a href="#" class="navbar-brand">UTN-FRT</a>
+                <a href="http://www.frt.utn.edu.ar/" class="navbar-brand">UTN-FRT</a>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-frt">
                   <span class="sr-only">Desplegar / Ocultar Menu</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a href="#" class="navbar-brand">Escuela de Posgrado</a>
+                <a href="{{ route('inicio') }}" class="navbar-brand">Escuela de Posgrado</a>
               </div>
 
               <!-- Inicia el Menu -->
               <div class="collapse navbar-collapse" id="navegacion-frt">
             <li>
                 <ul class="nav navbar-nav">
-                  <li class="active"><a href="#">Inicio</a></li>
+                  <li class="active"><a href="{{ route('inicio') }}">Inicio</a></li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
                       Carreras <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Carrera #1</a></li>
+                      <li><a href="{{ route('gerencial') }}">Maestría y Especialización en Ingeniería Gerencial</a></li>
                       <li class="divider"></li>
                       <li><a href="#">Carrera #2</a></li>
                       <li class="divider"></li>
@@ -100,7 +101,9 @@
 
 @yield ('carousel')
 
-<div>@yield('sidebar')</div>
+<div>
+@yield('sidebar')
+</div>
 
                             <!-- pies de pagina-->
     <footer>
@@ -173,8 +176,8 @@
     </footer>
                         <!--fin de piede pagina -->
 
-<script src="{{ asset('js\jquery.js') }}"></script>
-<script src="{{ asset('js\bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js\jquery.js') }}"></script>
+    <script src="{{ asset('js\bootstrap.min.js') }}"></script>
  <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
@@ -183,6 +186,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-
   </body>
 </html>

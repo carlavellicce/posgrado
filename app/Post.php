@@ -44,4 +44,9 @@ class Post extends Model
             return url("storage/$this->image");
     }
 
+    public function career()
+    {
+        return $this->belongsTo(Career::class); //Post pertenece a una carrera
+    }
+
 }

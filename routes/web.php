@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/admin', 'PageController@posts');
-Route::get('blog/{post}', 'PageController@post')->name('post');
+Route::get('/gerencial', 'PageController@posts')->name('gerencial');
+Route::get('gerencial/{post}', 'PageController@post')->name('post');
 
 Auth::routes();
 
@@ -27,8 +27,8 @@ Route::resource('posts', 'Backend\PostController')
 
 Route::get('/interested', 'InterestedController@index');	
 Route::post('/interested', 'InterestedController@store')->name('interesteds.store');
-Route::get('/interested/create', 'InterestedController@create');
+Route::get('/interested/create', 'InterestedController@create')->name('preinscripcion');
 
-Route::view('/', 'layouts/inicio'); //mostrar la vista de inicio general
+Route::view('/', 'layouts/inicio')->name('inicio'); //mostrar la vista de inicio general
 Route::view('/menu', 'layouts/menu');
 
